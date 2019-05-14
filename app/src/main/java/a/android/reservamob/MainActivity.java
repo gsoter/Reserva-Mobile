@@ -1,5 +1,6 @@
 package a.android.reservamob;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,10 +27,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        Intent i;
+
+        switch (view.getId()) {
 
             case R.id.btnPesquisa:
+//                ReservaDialogFragment reservaDialog = new ReservaDialogFragment();
+                break;
 
+            case R.id.btnApto01:
+                i = new Intent(this, AptoActivity.class);
+                i.putExtra("apto01", 01);
+                startActivity(i);
+                break;
+
+            case R.id.btnApto02:
+                i = new Intent(this, AptoActivity.class);
+                i.putExtra("apto02", 02);
+                startActivity(i);
+                break;
         }
 
     }

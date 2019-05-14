@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">ReservaMob</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="descricaoAp01">Descrição do apartamento simples aqui se encontrará
+        logo em instantes, a medida que as coisas vão evoluindo,
+        tenho fé que chegará o momento de apreciarmos tal texto.</string>
+    <string name="descricaoAp02">Descrição do apartamento duplo aqui se encontrará
+        logo em instantes, a medida que as coisas vão evoluindo,
+        tenho fé que chegará o momento de apreciarmos tal texto.</string>
+    <string name="message01">Exemplo de mensagem</string>
+    <string name="ok">Buscar</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
