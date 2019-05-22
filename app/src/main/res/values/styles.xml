@@ -10,5 +10,8 @@
     <style name="GeneralNoTittle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>
     </style>
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat">
+
+    </style>
 
 </resources>
