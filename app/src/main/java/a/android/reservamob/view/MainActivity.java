@@ -1,9 +1,9 @@
-package a.android.reservamob;
+package a.android.reservamob.view;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import a.android.reservamob.ReservaDialogFragment.ReservaDialogListener;
+import a.android.reservamob.R;
+import a.android.reservamob.view.ReservaDialogFragment.ReservaDialogListener;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, ReservaDialogListener {
     Button btnPesquisa;
@@ -44,14 +45,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment selectedFragment = null;
+            Intent i;
             switch (item.getItemId()) {
                 case R.id.nav_menu:
                     break;
                 case R.id.nav_home:
-                    Intent i = new Intent();
-                    startActivity(i);
                     break;
                 case R.id.nav_user:
+                    i = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(i);
                     break;
             }
             return true;
@@ -66,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btnPesquisa:
                 openDialog();
-            break;
+                break;
 
             case R.id.btnApto01:
                 i = new Intent(this, AptoActivity.class);
@@ -96,4 +98,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ReservaDialogFragment dialog = new ReservaDialogFragment();
         dialog.show(getSupportFragmentManager(), "Buscar Reserva");
     }
+
 }

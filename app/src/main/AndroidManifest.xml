@@ -11,18 +11,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".view.CadastrarActivity"
+            android:theme="@style/GeneralNoTittle" />
 
         <activity
-            android:name=".BuscarReservaActivity"
-            android:theme="@style/GeneralNoTittle">
-        </activity>
+            android:name=".view.LoginActivity"
+            android:theme="@style/GeneralNoTittle" />
         <activity
-            android:name=".AptoActivity"
-            android:theme="@style/GeneralNoTittle">
-
-        </activity>
+            android:name=".view.PerfilActivity"
+            android:theme="@style/GeneralNoTittle" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.BuscarReservaActivity"
+            android:theme="@style/GeneralNoTittle" />
+        <activity
+            android:name=".view.AptoActivity"
+            android:theme="@style/GeneralNoTittle" />
+        <activity
+            android:name=".view.MainActivity"
             android:theme="@style/GeneralNoTittle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

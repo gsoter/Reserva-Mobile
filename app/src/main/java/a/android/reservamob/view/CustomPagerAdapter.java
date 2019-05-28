@@ -1,4 +1,4 @@
-package a.android.reservamob;
+package a.android.reservamob.view;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import a.android.reservamob.R;
 
 class CustomPagerAdapter extends PagerAdapter {
 
